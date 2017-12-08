@@ -2,7 +2,7 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: d021c9085ba046ce57a699a7d88848595269dec9c34baa1e7d58e6bdac801a85
+-- hash: 2c222894b127fbf354c83a296371fe7fbebf6e47f9d34257072a3a3e5525ee73
 
 name:           naomi
 version:        0.1.0.0
@@ -30,9 +30,13 @@ library
   hs-source-dirs:
       src
   build-depends:
-      base >=4.7 && <5
+      aeson >=1.1.2.0 && <2.0
+    , base >=4.7 && <5
+    , scientific >=0.3.5.2 && <1.0
+    , wuss >=1.1.5 && <2.0
   exposed-modules:
       Lib
+      Naomi.Discord.Packet
   other-modules:
       Paths_naomi
   default-language: Haskell2010
@@ -43,8 +47,11 @@ executable naomi-exe
       app
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      base >=4.7 && <5
+      aeson >=1.1.2.0 && <2.0
+    , base >=4.7 && <5
     , naomi
+    , scientific >=0.3.5.2 && <1.0
+    , wuss >=1.1.5 && <2.0
   other-modules:
       Paths_naomi
   default-language: Haskell2010
@@ -56,8 +63,11 @@ test-suite naomi-test
       test
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      base >=4.7 && <5
+      aeson >=1.1.2.0 && <2.0
+    , base >=4.7 && <5
     , naomi
+    , scientific >=0.3.5.2 && <1.0
+    , wuss >=1.1.5 && <2.0
   other-modules:
       Paths_naomi
   default-language: Haskell2010
