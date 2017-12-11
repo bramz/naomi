@@ -24,6 +24,7 @@ dependencies:
 - wuss >= 1.1.5 && < 2.0
 - aeson >= 1.1.2.0 && < 2.0
 - scientific >= 0.3.5.2 && < 1.0
+- websockets >= 0.10.0.0 && < 1.0
 
 library:
   source-dirs: src
