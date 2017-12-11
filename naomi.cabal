@@ -2,7 +2,7 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 5bc730261a3518bc9a8a46074414e96cfbefc9ca70235a92b502e496b962bf5a
+-- hash: 95093eb609b6141e8e9fd2bb2505e4b4b9f60d4647572cf555467a99bbe5fd48
 
 name:           naomi
 version:        0.1.0.0
@@ -33,6 +33,7 @@ library
       aeson >=1.1.2.0 && <2.0
     , base >=4.7 && <5
     , scientific >=0.3.5.2 && <1.0
+    , stm >=2.4.4.1 && <3.0
     , websockets >=0.10.0.0 && <1.0
     , wuss >=1.1.5 && <2.0
   exposed-modules:
@@ -53,6 +54,7 @@ executable naomi-exe
     , base >=4.7 && <5
     , naomi
     , scientific >=0.3.5.2 && <1.0
+    , stm >=2.4.4.1 && <3.0
     , websockets >=0.10.0.0 && <1.0
     , wuss >=1.1.5 && <2.0
   other-modules:
@@ -70,6 +72,7 @@ test-suite naomi-test
     , base >=4.7 && <5
     , naomi
     , scientific >=0.3.5.2 && <1.0
+    , stm >=2.4.4.1 && <3.0
     , websockets >=0.10.0.0 && <1.0
     , wuss >=1.1.5 && <2.0
   other-modules:
